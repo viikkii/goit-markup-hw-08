@@ -1,0 +1,26 @@
+.logo {
+  @include font(26px, 700, 1.19);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo-header {
+  color: var(--primary-black-color);
+  margin-right: 93px;
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo__icon {
+  color: var(--accent-color);
+}

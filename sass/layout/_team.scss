@@ -1,0 +1,49 @@
+.team__text {
+  margin-bottom: 50px;
+}
+.section-team {
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: var(--primary-white-color);
+  box-shadow: var(--third-shadow);
+}
+
+.section-ul-team {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comand-fon {
+  background-color: var(--button-galery-box);
+  margin-bottom: 0;
+  padding-bottom: 94px;
+  @media screen and (max-width: 1170px) {
+    padding-bottom: 60px;
+  }
+}
+
+.section-title-name {
+  @include font(16px, 500, 1.19);
+  color: var(--section-text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-text-name {
+  @include font(16px, 400, 1.19);
+  text-align: center;
+  margin-bottom: 16px;
+}

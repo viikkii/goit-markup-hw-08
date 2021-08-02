@@ -1,0 +1,9 @@
+.section-text {
+  line-height: 1.71;
+}
+
+.section-title {
+  @include font(36px, 700, 1.17);
+  color: var(--section-text-color);
+  text-align: center;
+}

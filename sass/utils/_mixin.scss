@@ -1,0 +1,11 @@
+@mixin font($fs: 14px, $fw: 400, $lh: 1.14) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
