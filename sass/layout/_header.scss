@@ -93,3 +93,19 @@
   margin-right: 10px;
   color: var(--primary-text-color);
 }
+
+.menu__icon {
+  color: #000000;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-button .menu__icon {
+  display: none;
+}

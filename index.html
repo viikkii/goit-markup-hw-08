@@ -24,6 +24,7 @@
           <a class="logo logo-header" href="./index.html">
             <span class="logo__icon">Web</span>Studio</a
           >
+
           <ul class="menu link-ul section-item">
             <li class="menu__item">
               <a
@@ -69,6 +70,18 @@
             >
           </li>
         </ul>
+        <!-- <button type="button" class="menu-button">
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu__icon"
+              href="./images/sprite/burger.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button> -->
       </div>
     </header>
 
@@ -76,7 +89,7 @@
     <main>
       <!--Герой-->
       <section class="hero">
-        <div class="container">
+        <div class="container box-hero">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" data-modal-open class="button">
             Заказать услугу
@@ -195,12 +208,59 @@
           <h2 class="team__text section-title">Наша команда</h2>
           <ul class="link-ul section-item section-ul-team">
             <li class="section-team">
-              <img
-                src="./images/team/team-master-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team1.webp    1x,
+                    ./images/deckstope/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team1.jpg    1x,
+                    ./images/deckstope/team1@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team1.webp    1x,
+                    ./images/tablet/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team1.jpg    1x,
+                    ./images/tablet/team1@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team1.webp    1x,
+                    ./images/mobile/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team1.jpg    1x,
+                    ./images/mobile/team1@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-master-1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="section-title-name">Игорь Демьяненко</h3>
                 <p lang="eu" class="section-text-name">Product Designer</p>
@@ -263,12 +323,59 @@
               </div>
             </li>
             <li class="section-team">
-              <img
-                src="./images/team/team-master-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team2.webp    1x,
+                    ./images/deckstope/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team2.jpg    1x,
+                    ./images/deckstope/team2@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team2.webp    1x,
+                    ./images/tablet/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team2.jpg    1x,
+                    ./images/tablet/team2@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team2.webp    1x,
+                    ./images/mobile/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team2.jpg    1x,
+                    ./images/mobile/team2@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-master-2.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="section-title-name">Ольга Репина</h3>
                 <p lang="eu" class="section-text-name">Frontend Developer</p>
@@ -331,12 +438,60 @@
               </div>
             </li>
             <li class="section-team">
-              <img
-                src="./images/team/team-master-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team3.webp    1x,
+                    ./images/deckstope/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team3.jpg    1x,
+                    ./images/deckstope/team3@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team3.webp    1x,
+                    ./images/tablet/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team3.jpg    1x,
+                    ./images/tablet/team3@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team3.webp    1x,
+                    ./images/mobile/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team3.jpg    1x,
+                    ./images/mobile/team3@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-master-3.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-box">
                 <h3 class="section-title-name">Николай Тарасов</h3>
                 <p lang="eu" class="section-text-name">Marketing</p>
@@ -399,12 +554,60 @@
               </div>
             </li>
             <li class="section-team">
-              <img
-                src="./images/team/team-master-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team4.webp    1x,
+                    ./images/deckstope/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team4.jpg    1x,
+                    ./images/deckstope/team4@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team4.webp    1x,
+                    ./images/tablet/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team4.jpg    1x,
+                    ./images/tablet/team4@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team4.webp    1x,
+                    ./images/mobile/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team4.jpg    1x,
+                    ./images/mobile/team4@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-master-4.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-box">
                 <h3 class="section-title-name">Михаил Ермаков</h3>
                 <p lang="eu" class="section-text-name">UI Designer</p>
