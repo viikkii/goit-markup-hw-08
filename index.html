@@ -18,7 +18,7 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo logo-header" href="./index.html">
@@ -70,32 +70,20 @@
             >
           </li>
         </ul>
-        <!-- <button type="button" class="menu-button">
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="menu__icon"
-              href="./images/sprite/burger.svg#icon-menu_40px"
-            ></use>
-          </svg>
-        </button> -->
       </div>
-    </header>
+    </header> -->
 
     <!--Уникальный мейн-->
     <main>
       <!--Герой-->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container box-hero">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" data-modal-open class="button">
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!--Преимущества-->
       <section class="section about-section">
@@ -208,7 +196,7 @@
           <h2 class="team__text section-title">Наша команда</h2>
           <ul class="link-ul section-item section-ul-team">
             <li class="section-team">
-              <picture>
+              <picture class="team-picture">
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -257,8 +245,6 @@
                 <img
                   src="./images/team/team-master-1.jpg"
                   alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="team-box">
@@ -369,12 +355,7 @@
                     ./images/mobile/team2@2x.jpg 2x
                   "
                 />
-                <img
-                  src="./images/team/team-master-2.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                  height="260"
-                />
+                <img src="./images/team/team-master-2.jpg" alt="Ольга Репина" />
               </picture>
               <div class="team-box">
                 <h3 class="section-title-name">Ольга Репина</h3>
@@ -487,8 +468,6 @@
                 <img
                   src="./images/team/team-master-3.jpg"
                   alt="Николай Тарасов"
-                  width="270"
-                  height="260"
                 />
               </picture>
 
@@ -603,8 +582,6 @@
                 <img
                   src="./images/team/team-master-4.jpg"
                   alt="Михаил Ермаков"
-                  width="270"
-                  height="260"
                 />
               </picture>
 
@@ -740,81 +717,83 @@
     <!--Подвал-->
     <footer class="footer">
       <div class="container box">
-        <div class="box-one">
-          <a class="logo logo-footer" href="./index.html">
-            <span class="logo__icon">Web</span>Studio</a
-          >
-          <address>
-            <ul class="link-ul">
-              <li class="footer-text section-footer">
-                <a
-                  href="https://goo.gl/maps/QAPjnCz2YvxkVtEf7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="footer-address link-a-href"
-                  >г. Киев, пр-т Леси Украинки, 26
+        <div class="container-tablet">
+          <div class="box-one">
+            <a class="logo logo-footer" href="./index.html">
+              <span class="logo__icon">Web</span>Studio</a
+            >
+            <address>
+              <ul class="link-ul">
+                <li class="footer-text section-footer">
+                  <a
+                    href="https://goo.gl/maps/QAPjnCz2YvxkVtEf7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-address link-a-href"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="section-footer">
+                  <a href="tel:+380991111111" class="footer-phone link-a-href"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+                <li class="section-footer">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer-mail link-a-href"
+                    >info@example.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="container-join">
+            <h2 class="footer-text text-join">Присоединяйтесь</h2>
+            <ul class="link-ul join-ul section-item-footer">
+              <li class="join-title section-footer">
+                <a class="join-link" href="./" aria-label="Ссылка на Instagram">
+                  <svg class="join-icon" width="20" height="20">
+                    <use
+                      href="./images/sprite/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
                 </a>
               </li>
-              <li class="section-footer">
-                <a href="tel:+380991111111" class="footer-phone link-a-href"
-                  >+38 099 111 11 11</a
-                >
+              <li class="join-title section-footer">
+                <a class="join-link" href="./" aria-label="Ссылка на Twitter">
+                  <svg class="join-icon" width="20" height="20">
+                    <use
+                      href="./images/sprite/symbol-defs.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="section-footer">
-                <a
-                  href="mailto:info@example.com"
-                  class="footer-mail link-a-href"
-                  >info@example.com</a
-                >
+              <li class="join-title section-footer">
+                <a class="join-link" href="./" aria-label="Ссылка на Facebook">
+                  <svg class="join-icon" width="20" height="20">
+                    <use
+                      href="./images/sprite/symbol-defs.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-title section-footer">
+                <a class="join-link" href="./" aria-label="Ссылка на Linkedin">
+                  <svg class="join-icon" width="20" height="20">
+                    <use
+                      href="./images/sprite/symbol-defs.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="container-join">
-          <h2 class="footer-text">Присоединяйтесь</h2>
-          <ul class="link-ul join-ul section-item-footer">
-            <li class="join-title section-footer">
-              <a class="join-link" href="./" aria-label="Ссылка на Instagram">
-                <svg class="join-icon" width="20" height="20">
-                  <use
-                    href="./images/sprite/symbol-defs.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-title section-footer">
-              <a class="join-link" href="./" aria-label="Ссылка на Twitter">
-                <svg class="join-icon" width="20" height="20">
-                  <use
-                    href="./images/sprite/symbol-defs.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-title section-footer">
-              <a class="join-link" href="./" aria-label="Ссылка на Facebook">
-                <svg class="join-icon" width="20" height="20">
-                  <use
-                    href="./images/sprite/symbol-defs.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-title section-footer">
-              <a class="join-link" href="./" aria-label="Ссылка на Linkedin">
-                <svg class="join-icon" width="20" height="20">
-                  <use
-                    href="./images/sprite/symbol-defs.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="container-email">
-          <h2 class="footer-text">Подпишитесь на рассылку</h2>
+          <h2 class="footer-text text-join">Подпишитесь на рассылку</h2>
           <form class="user-email">
             <input
               type="email"
@@ -834,7 +813,7 @@
     </footer>
 
     <!-- модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-btn">
           <svg class="join-icon" width="18" height="18">
@@ -842,10 +821,10 @@
               href="./images/sprite/symbol-defs.svg#icon-close-black-18dp-2-1"
             ></use>
           </svg>
-        </button>
+        </button> -->
 
-        <!-- модальное окно-разметка -->
-        <form action="#" class="modal-form">
+    <!-- модальное окно-разметка -->
+    <!-- <form action="#" class="modal-form">
           <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
           <label class="form-label">
             Имя
@@ -919,9 +898,9 @@
             ></label
           >
           <button type="submit" class="btn-send">Отправить</button>
-        </form>
-      </div>
-    </div>
-    <script src="./js/modal.js"></script>
+        </form> -->
+    <!-- </div>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
