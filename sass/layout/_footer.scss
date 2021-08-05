@@ -45,6 +45,7 @@
 
 .section-footer {
   margin-bottom: 8px;
+  line-height: 1.71;
 }
 
 .join-ul {
@@ -72,7 +73,7 @@
   @include font(16px, 400, 1.25);
   color: var(--primary-white-color);
   height: 50px;
-  width: 450px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   box-shadow: var(--shadow-btn);

@@ -104,9 +104,9 @@ img {
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   font-family: var(--secondary-font);
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,16 +131,28 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
 .section-text {
   line-height: 1.71;
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   color: var(--section-text-color);
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
 }
 
 .modal {
@@ -610,7 +622,7 @@ img {
 .about__text {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.71;
+  line-height: 1.14;
   color: var(--section-text-color);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -656,6 +668,11 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .about__text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+  }
   .section-item {
     flex-wrap: nowrap;
   }
@@ -758,9 +775,10 @@ img {
   padding-bottom: 60px;
 }
 
-.team-picture {
-  width: 450px;
-  height: 460px;
+.team-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team {
@@ -858,7 +876,7 @@ img {
   fill: var(--border-second-color);
   border: 1px solid var(--border-second-color);
   border-radius: 4px;
-  width: 210px;
+  width: 100%;
   height: 92px;
   display: flex;
   justify-content: space-around;
@@ -972,6 +990,7 @@ img {
 
 .section-footer {
   margin-bottom: 8px;
+  line-height: 1.71;
 }
 
 .join-ul {
@@ -1001,7 +1020,7 @@ img {
   line-height: 1.25;
   color: var(--primary-white-color);
   height: 50px;
-  width: 450px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   box-shadow: var(--shadow-btn);

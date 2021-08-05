@@ -3,7 +3,11 @@
 }
 
 .section-title {
-  @include font(36px, 700, 1.17);
+  @include font(28px, 700, 1.17);
   color: var(--section-text-color);
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  @include font(36px, 700, 1.17);
 }

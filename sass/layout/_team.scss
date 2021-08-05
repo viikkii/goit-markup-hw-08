@@ -26,9 +26,10 @@
   padding-bottom: 60px;
 }
 
-.team-picture {
-  width: 450px;
-  height: 460px;
+.team-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team {
