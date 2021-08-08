@@ -18,72 +18,86 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
-        <nav class="navigation">
-          <a class="logo logo-header" href="./index.html">
-            <span class="logo__icon">Web</span>Studio</a
-          >
+        <div class="container-general">
+          <nav class="navigation">
+            <a class="logo logo-header" href="./index.html">
+              <span class="logo__icon">Web</span>Studio</a
+            >
 
-          <ul class="menu link-ul section-item">
-            <li class="menu__item">
+            <ul class="menu link-ul section-item menu-tablet">
+              <li class="menu__item">
+                <a
+                  class="menu__link link-a-href current section-after"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="menu__item">
+                <a
+                  class="menu__link link-a-href section-after"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link-a-href section-after" href="#"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact link-ul section-item section-list menu-tablet">
+            <li class="contact__item">
               <a
-                class="menu__link link-a-href current section-after"
-                href="./index.html"
-                >Студия</a
+                href="mailto:info@devstudio.com"
+                class="contact__mail-link link-a-href"
+              >
+                <svg class="contact__icon" width="16" height="12">
+                  <use
+                    href="./images/sprite/symbol-defs.svg#icon-envelope"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="menu__item">
+            <li class="contact__item">
               <a
-                class="menu__link link-a-href section-after"
-                href="./portfolio.html"
-                >Портфолио</a
+                href="tel:+380991111111"
+                class="contact__phone-link link-a-href"
               >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link-a-href section-after" href="#"
-                >Контакты</a
+                <svg class="contact__icon" width="10" height="16">
+                  <use
+                    href="./images/sprite/symbol-defs.svg#icon-smartphone"
+                  ></use>
+                </svg>
+                +38 099 111 11 11</a
               >
             </li>
           </ul>
-        </nav>
-        <ul class="contact link-ul section-item section-list">
-          <li class="contact__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contact__mail-link link-a-href"
-            >
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/sprite/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <a href="tel:+380991111111" class="contact__phone-link link-a-href">
-              <svg class="contact__icon" width="10" height="16">
-                <use
-                  href="./images/sprite/symbol-defs.svg#icon-smartphone"
-                ></use>
-              </svg>
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <div class="burger">
+          <button type="button" class="burger-btn">
+            <svg class="burger-icon" width="18" height="18">
+              <use href="./images/sprite/burger.svg"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <!--Уникальный мейн-->
     <main>
       <!--Герой-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container box-hero">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" data-modal-open class="button">
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--Преимущества-->
       <section class="section about-section">
@@ -242,7 +256,8 @@
                     ./images/mobile/team1@2x.jpg 2x
                   "
                 />
-                <img class="team-icon"
+                <img
+                  class="team-icon"
                   src="./images/team/team-master-1.jpg"
                   alt="Игорь Демьяненко"
                 />
@@ -355,7 +370,11 @@
                     ./images/mobile/team2@2x.jpg 2x
                   "
                 />
-                <img class="team-icon" src="./images/team/team-master-2.jpg" alt="Ольга Репина" />
+                <img
+                  class="team-icon"
+                  src="./images/team/team-master-2.jpg"
+                  alt="Ольга Репина"
+                />
               </picture>
               <div class="team-box">
                 <h3 class="section-title-name">Ольга Репина</h3>
@@ -465,7 +484,8 @@
                     ./images/mobile/team3@2x.jpg 2x
                   "
                 />
-                <img class="team-icon"
+                <img
+                  class="team-icon"
                   src="./images/team/team-master-3.jpg"
                   alt="Николай Тарасов"
                 />
@@ -579,7 +599,8 @@
                     ./images/mobile/team4@2x.jpg 2x
                   "
                 />
-                <img class="team-icon"
+                <img
+                  class="team-icon"
                   src="./images/team/team-master-4.jpg"
                   alt="Михаил Ермаков"
                 />

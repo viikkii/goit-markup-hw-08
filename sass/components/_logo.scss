@@ -15,6 +15,12 @@
   margin-right: 93px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 88px;
+  }
+}
+
 .logo-footer {
   color: var(--primary-white-color);
   display: block;
@@ -26,5 +32,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  @include font(26px, 700, 1.19);
+  .logo {
+    @include font(26px, 700, 1.19);
+  }
 }
