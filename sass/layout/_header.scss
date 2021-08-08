@@ -12,10 +12,34 @@
   display: none;
 }
 
-.burger-icon {
-  color: #ffff;
-  background-color: black;
+.header-container {
+  align-items: center;
 }
+
+.burger-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+// .burger-btn {
+//   color: var(--section-text-color);
+//   position: absolute;
+//   display: block;
+//   top: 50%;
+//   left: 12px;
+//   transform: translateY(-50%);
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   .form-input:focus + & {
+//     fill: var(--accent-color);
+//   }
+// }
 
 .header-container {
   display: flex;

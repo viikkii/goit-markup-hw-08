@@ -464,9 +464,19 @@ img {
   display: none;
 }
 
-.burger-icon {
-  color: #ffff;
-  background-color: black;
+.header-container {
+  align-items: center;
+}
+
+.burger-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.burger-btn:focus, .burger-btn:hover {
+  fill: var(--accent-color);
 }
 
 .header-container {
