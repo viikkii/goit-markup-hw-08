@@ -185,7 +185,7 @@ img {
   left: 50%;
   top: 50%;
   width: 450px;
-  height: 609px;
+  max-height: 100%;
   background: var(--primary-white-color);
   transform: translate(-50%, -50%);
   animation-name: changeModalBtn;
@@ -213,10 +213,9 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (orientation: landscape) and (max-width: 800px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    overflow: auto;
   }
 }
 
@@ -348,19 +347,18 @@ img {
 }
 
 .checkbox-label {
-  line-height: 1.71;
-  display: flex;
-  align-items: center;
+  line-height: 1.17;
   margin-bottom: 30px;
+  font-size: 12px;
 }
 
 .checkbox-label::before {
   content: ' ';
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 15px;
   border: 1px solid var(--section-text-color);
-  margin-right: 7px;
+  margin-right: 3px;
 }
 
 .form-checkbox:checked + .checkbox-label::before {
@@ -403,6 +401,34 @@ img {
 
 .btn-send:hover, .btn-send:focus {
   background-color: var(--button-second-color);
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox-label {
+    font-size: 12px;
+  }
+  .checkbox-label::before {
+    margin-right: 3px;
+  }
+  .checkbox-link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+  }
+  .checkbox-label::before {
+    display: block;
+    margin-right: 7px;
+  }
+  .checkbox-label .checkbox-link {
+    font-size: 14px;
+  }
 }
 
 .team__link {
@@ -506,6 +532,7 @@ img {
 
 .container-mobile {
   position: relative;
+  width: 100%;
 }
 
 .mobile-menu {
@@ -621,7 +648,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
-  border: blueviolet;
 }
 
 .social-item {
@@ -639,6 +665,12 @@ img {
 .social-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 768px) {

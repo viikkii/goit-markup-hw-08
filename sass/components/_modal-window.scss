@@ -99,18 +99,17 @@
 }
 
 .checkbox-label {
-  line-height: 1.71;
-  display: flex;
-  align-items: center;
+  line-height: 1.17;
   margin-bottom: 30px;
+  font-size: 12px;
 
   &::before {
     content: ' ';
-    display: block;
+    display: inline-block;
     width: 16px;
     height: 15px;
     border: 1px solid var(--section-text-color);
-    margin-right: 7px;
+    margin-right: 3px;
   }
 
   .form-checkbox:checked + &::before {
@@ -152,5 +151,36 @@
   &:hover,
   &:focus {
     background-color: var(--button-second-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox-label {
+    font-size: 12px;
+
+    &::before {
+      margin-right: 3px;
+    }
+  }
+
+  .checkbox-link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: block;
+      margin-right: 7px;
+    }
+    .checkbox-link {
+      font-size: 14px;
+    }
   }
 }

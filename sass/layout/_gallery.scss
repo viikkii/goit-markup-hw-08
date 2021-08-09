@@ -86,7 +86,6 @@
   color: var(--primary-text-color);
 }
 
-// 768 px
 @media screen and (min-width: 768px) {
   .section-ul-portfolio {
     justify-content: center;
@@ -110,7 +109,6 @@
   }
 }
 
-// 1200px
 @media screen and (min-width: 1200px) {
   .overlay {
     overflow: auto;
