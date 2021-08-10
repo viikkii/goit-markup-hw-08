@@ -5,10 +5,10 @@
   background-color: var(--primary-heder-footer-color);
   flex-grow: 1;
   background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-  background-image: url('../images/mobile/bg-main.jpg');
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/mobile/bg-main.jpg');
   background-size: cover;
   max-width: 100%;
 }
@@ -51,13 +51,21 @@
   (min-resolution: 192dpi) and (min-width: 280px),
   (min-resolution: 2dppx) and (min-width: 280px) {
   .hero {
-    background-image: url('../images/mobile/bg-main@2x.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/mobile/bg-main@2x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('../images/tablet/bg-main.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tablet/bg-main.jpg');
   }
 }
 
@@ -65,13 +73,21 @@
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url('../images/tablet/bg-main@2x.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tablet/bg-main@2x.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url('../images/hero-img/img-hero.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-img/img-hero.jpg');
   }
   .hero__title {
     @include font(44px, 900, 1.36);
@@ -83,6 +99,10 @@
   (min-resolution: 192dpi) and (min-width: 1200px),
   (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url('../images/hero-img/img-hero@2x.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero-img/img-hero@2x.jpg');
   }
 }

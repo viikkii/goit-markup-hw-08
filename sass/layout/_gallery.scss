@@ -10,12 +10,16 @@
   margin-bottom: 40px;
 }
 
-.section-li-btn:not(:last-child) {
+.section-li-btn {
   margin-right: 8px;
   margin-bottom: 15px;
 }
 
-.section-li-galery {
+.button-margin {
+  margin-bottom: 0;
+}
+
+.section-li-galery:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -87,6 +91,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-li-btn:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+
   .section-ul-portfolio {
     justify-content: center;
     margin-bottom: 50px;
@@ -104,6 +113,9 @@
     margin-left: 30px;
   }
 
+  .section-li-galery:not(:last-child) {
+    margin-bottom: 0;
+  }
   .galery-box-test {
     padding-left: 9px;
   }
